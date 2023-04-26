@@ -1,0 +1,40 @@
+<p class="cities-added-text">
+  {{ favouriteList.length }} cities added as favourite
+</p>
+<div class="compdiv" *ngFor="let fav of favouriteList">
+  <div class="compdivmobdiv">
+    <div class="comptext1">{{ fav.name }}</div>
+    <div class="compdivin">
+      <img
+      src="http://openweathermap.org/img/wn/{{
+        this.fav['weather'][0].icon
+      }}@2x.png"
+        alt="comp_icon"
+        class="comp_icon"
+      />
+      <p class="comptext2">
+        {{ (fav["main"].temp_min - 273.15).toFixed(0) }}
+        <span class="degree-text">°c</span>
+      </p>
+      <p class="comptext3"> {{ fav.weather[0].description | titlecase }}</p>
+    </div>
+  </div>
+  <img
+    src="../assets/images/icon_favourite_Active.png"
+    alt="favourite"
+    class="fav_icon"
+  />
+  <!-- {false ? (
+      <img
+        src="../assets/images/favourite_icon_copy.png"
+        alt="favourite"
+        class="fav_icon"
+      />
+    ) : (
+      <img
+        src="../assets/images/icon_favourite_Active.png"
+        alt="favourite"
+        class="fav_icon"
+      />
+    )} -->
+</div>

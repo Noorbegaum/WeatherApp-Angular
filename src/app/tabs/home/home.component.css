@@ -1,0 +1,172 @@
+.city-name {
+  color: #ffffff;
+  font-family: Roboto Regular;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: 47px;
+  margin-bottom: 0;
+}
+.temp-desc-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  position: relative;
+}
+.favtext {
+  color: #ffffff;
+  font-family: Roboto Regular;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 0;
+}
+.temp {
+  color: #ffffff;
+  font-family: Roboto Regular;
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 0;
+  text-align: right;
+  width: 55%;
+}
+.add-to-fav-cont {
+  display: flex;
+  padding: 0;
+  margin-top: 23px;
+}
+.fav-icon {
+  height: 16.97px;
+  width: 18px;
+  margin: 0;
+  margin-right: 7px;
+}
+.temp-desc-top {
+  color: #ffffff;
+  font-family: Roboto Regular;
+  font-size: 23px;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.temp-desc-inner-container {
+  display: flex;
+  margin-top: 16px;
+  padding: 0;
+  align-items: flex-end;
+  width: 197px;
+}
+.individual-temp-detail {
+  margin: 20px;
+  width: fit-content;
+  height: 49px;
+  width: 108px;
+  display: flex;
+  position: relative;
+}
+.thermo {
+  height: 32px;
+  width: 16px;
+}
+.temp-desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.actual-entity {
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 18px;
+  font-family: Roboto Regular;
+  /* margin-bottom: -26px; */
+  position: absolute;
+
+  top: -11px;
+  margin-left: 15px;
+}
+.actual-value {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-family: Roboto Regular;
+  position: absolute;
+
+  bottom: -28px;
+  margin-left: 15px;
+}
+.temp-details-container {
+  height: 132px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* overscroll-behavior-x: contain;
+    overflow-x: auto; */
+  overflow: scroll;
+  padding: 0px 10px 0px 10px;
+  align-self: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 48px;
+  width: 81.5vw;
+}
+.temp-details-container::-webkit-scrollbar {
+  display: none;
+}
+.line {
+  box-sizing: border-box;
+  height: 1px;
+  width: 83vw;
+  border: 0.5px solid #ffffff;
+  opacity: 0.3;
+  margin-top: 0;
+  position: absolute;
+  bottom: 200px;
+}
+.precipitation {
+  height: 29px;
+  width: 30px;
+}
+.humidity {
+  height: 25px;
+  width: 19px;
+}
+.wind {
+  height: 22px;
+  width: 32px;
+}
+.visibility {
+  height: 20px;
+  width: 34px;
+}
+.toggle-button {
+  box-sizing: border-box;
+  height: 30px;
+  width: 28px;
+  background-color: transparent;
+  border: none;
+}
+.btn {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  /* position: absolute;
+  right: 44%;
+  top: 52.5%; */
+  margin-bottom: 16px;
+}
+.no-active {
+  background: none;
+  color: #ffffff;
+}
+.active {
+  background-color: white;
+  color: #e32843;
+}

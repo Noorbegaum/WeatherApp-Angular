@@ -1,0 +1,23 @@
+<div class="home-container">
+  <ul class="navbar">
+    <li>
+      <a
+        routerLink=""
+        [routerLinkActive]="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >HOME</a
+      >
+    </li>
+    <li><a routerLink="favourite" [routerLinkActive]="active">FAVOURITE</a></li>
+    <li>
+      <a routerLink="recent" [routerLinkActive]="active">RECENT SEARCH</a>
+    </li>
+  </ul>
+  <p class="date-time">
+    {{ date | date : "E" | titlecase }},&nbsp;{{
+      date | date : "mediumDate" | titlecase
+    }}&nbsp;&nbsp;&nbsp;&nbsp;{{ date | date : "shortTime" | uppercase }}
+  </p>
+</div>
+<div class="line"></div>
+<router-outlet></router-outlet>

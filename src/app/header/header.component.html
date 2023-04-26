@@ -1,0 +1,21 @@
+<div class="header-container">
+  <img src="../../assets/images/logoweb.png" alt="appLogo" class="logo" />
+  <div class="search-container">
+    <input
+      class="text"
+      placeholder="Search City"
+      type="text"
+      name="text"
+      [(ngModel)]="text"
+      (ngModelChange)="handleChange($event)"
+    />
+    <img
+      src="../../assets/images/icon_search_white.png"
+      alt="search"
+      class="search-icon"
+    />
+  </div>
+</div>
+<div class="list-container">
+  <p (click)="handleCityClick(city.name)" *ngFor="let city of cityResults">{{ city.name }}</p>
+</div>
