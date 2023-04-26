@@ -1,0 +1,49 @@
+.header-container {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 30px;
+  width: 142px;
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 38%;
+}
+.search-icon {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+.text {
+  box-sizing: border-box;
+  height: 45px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-left: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  outline: none;
+}
+::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  opacity: 0.8;
+}
+.list-container {
+  height: fit-content;
+  width: 31.3%;
+  background-color: #ffffff;
+  position: absolute;
+  right: 111px;
+  border-radius: 4px;
+}
